@@ -1,0 +1,20 @@
+{
+  "name": "furnace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cr92/furnace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cr92/furnace/issues"
+  },
+  "homepage": "https://github.com/cr92/furnace#readme"
+}
