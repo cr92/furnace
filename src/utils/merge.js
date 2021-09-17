@@ -8,8 +8,20 @@ function merge(arrX, arrY) {
     let iy = 0;
 
     while (ix < lenX || iy < lenY) {
-        let x = arrX[ix];
-        let y = arrY[iy];
+
+        let x, y;
+
+        if (isNaN(arrX[ix])) {
+            x = Number.POSITIVE_INFINITY;
+        } else {
+            x = arrX[ix];
+        }
+
+        if (isNaN(arrY[iy])) {
+            y = Number.POSITIVE_INFINITY;
+        } else {
+            y = arrY[iy];
+        }
 
         if (x <= y) {
             merged.push(x);
@@ -23,7 +35,6 @@ function merge(arrX, arrY) {
     return merged;
 }
 
-const arrX = [2, 11, 13, 17];
-const arrY = [3, 5, 7, 13, 14, 17, 19, 23];
-
-console.log(merge(arrX, arrY));
+module.exports = {
+    merge
+}
