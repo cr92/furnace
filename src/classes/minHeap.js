@@ -49,6 +49,9 @@ class MinHeap {
             pIndex = sIndex;
         }
     }
+    size() {
+        return this.list.length - 1;
+    }
 }
 
 module.exports = {

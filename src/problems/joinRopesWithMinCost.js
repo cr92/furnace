@@ -1,4 +1,6 @@
-const {MinHeap} = require('../classes/minHeap');
+const {
+    MinHeap
+} = require('../classes/minHeap');
 
 function joinRopesWithMinCost(A) {
     let cost = 0;
